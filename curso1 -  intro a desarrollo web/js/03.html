@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" href="01.css" type="text/css">
+    <script src="03.js"></script>
 </head>
 
-<h2 style="color:blue">Formularios</h2>
+<h2>Formularios</h2>
 
-<form onsubmit="alert('hola mundo!')">
+<form>
     <div class="parte1">
         <label for="user">Correo:</label><br>
         <input type="text" id="user" name="user" placeholder="ejemplo@gmail.com" required><br>
         <label for="password">Contraseña:</label><br>
         <!--se puede cambiar el tipo a password y el navegador lo interpretará-->
         <input type="text" id="password" name="password" placeholder="contraseña" required><br><br>
-        <input type="submit" value="Submit">
+        <input type="reset" value="Submit" onclick="accesWebPage()">
     </div>
     <div>
         <p>
@@ -21,3 +21,6 @@
         <a href="google.com">aviso de privacidad</a>
     </div>
 </form>
+
+<link rel="stylesheet" href="02.css" type="text/css">
+<link rel="stylesheet" href="01.css" type="text/css">

@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" href="02.css" type="text/css">
+    <link rel="stylesheet" href="01.css" type="text/css">
+    <script>
+        function accesWe2bPage() {
+            var temporalUser = document.getElementById("user").value;
+            var temporalPass = document.getElementById("password").value;
+            if(temporalUser == "diego@saftu.com" && temporalPass == "123") {
+                alert("Bienvenido");
+                window.location.href = "access.html";
+            } else {
+                alert("ERROR");
+            }
+        }
+    </script>
 </head>
 
 <h2 style="color:blue">Formularios</h2>
@@ -12,7 +24,7 @@
         <label for="password">Contraseña:</label><br>
         <!--se puede cambiar el tipo a password y el navegador lo interpretará-->
         <input type="text" id="password" name="password" placeholder="contraseña" required><br><br>
-        <input type="submit" value="Submit">
+        <input type="reset" value="Submit" onclick="accesWe2bPage()">
     </div>
     <div>
         <p>

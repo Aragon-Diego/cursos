@@ -2,7 +2,9 @@ input{
     background-color: black;
     color: white;
 }
-
+h2 {
+    color: red;
+}
 /*
 input{
     width: 90%;
